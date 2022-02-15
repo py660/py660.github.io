@@ -1,1 +1,1 @@
-Please visit [py660.github.io](py660.github.io).
+Please visit [https://py660.github.io/index.html](py660.github.io).
