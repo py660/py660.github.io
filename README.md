@@ -1,2 +1,1 @@
-# py660.github.io
-Web Hosting For General Material
+Please visit [py660.github.io](py660.github.io).
