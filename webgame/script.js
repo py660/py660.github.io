@@ -31,6 +31,7 @@ function onLoad() {
 
 
 //START
+/*
 let x = document.cookie;
 console.log(x);
 document.cookie = "hi=bye";
@@ -50,7 +51,7 @@ function setcookie(name, value, days)
 setcookie("hi", "bye", 12345);
 let y = document.cookie;
 console.log(y);
-    
+*/
 //END
     
 }
