@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,17 +12,28 @@
 <b><header>Flappy Block — JS & HTML5</header></b>
 <h1 id="score">Score:</h1>
 <h2 id="gravitytext">Gravity: </h2>
+<section>
 <h2 id="highscore">Best: --</h2>
-<button class="amazon2" onclick="resetScore">Reset Best Score</button>
+<button class="amazon2" onclick="resetScore()">Reset Best Score</button>
 <h2 id="gameovertext"></h2>
 <h3>Set Gravity (RANGE: 1-10)</h3>
 <input type="text" id="gravity" placeholder="Gravity Default: 5"/>
 <p id="hovertext"></p>
+<br></section>
+<hr>
+<section>
+<br>
+<h id="recordtext">Can you beat the high score of 51?</h4>
 <button id="play" class="discord2" onclick="startGame()">Play!</button>
 <button id="restart" class="discord3" onclick="restartGame()">Reload Game</button>
-<br></br>
-<label for="value">When Alt key is pressed, The game will pause and </label><input placeholder="Blank Page" id="url" type="url"></input><label> will open in a new tab.</label>
+<br></section>
+<hr>
+<section>
+<label for="value">When <code>Alt Key</code> is pressed, The game will <code>pause</code> and </label><code><input placeholder="Blank Page" id="url" type="url"></input></code><label> will open in a new tab.</label>
+<br>
+<caption>Remember to add <code>https://</code> to your url.</caption>
 <a class="button" href="https://www.google.com" target="_self"></a>
+</section>
 </body>
 </html>
 
