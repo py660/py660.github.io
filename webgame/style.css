@@ -1,0 +1,126 @@
+
+canvas{
+    background:#000000  ;
+    transition:background 0.3s;
+}
+canvas:hover{
+    background:#e3e3e3;
+    cursor: pointer;
+}
+#score{
+    color:white;
+}
+#gravitytext{
+    color:white;
+}
+#hovertext{
+    color:white;
+}
+#gameovertext{
+    color:white;
+}
+.discord1{
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 38px;
+                    min-width: 96px;
+                    min-height: 38px;
+                    border: none;
+                    color: #fff;
+                    background-color: rgb(88, 101, 242);
+                    transition: background-color .17s ease,color .17s ease;
+}
+.discord1:hover{
+                        background-color: rgb(71, 82, 196);
+}
+.discord2{
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 32px;
+                    min-width: 60px;
+                    min-height: 32px;
+                    border: none;
+                    color: #fff;
+                    background-color: rgb(88, 101, 242);
+                    transition: background-color .17s ease,color .17s ease;
+}
+.discord2:hover{
+                        background-color: rgb(71, 82, 196);
+}
+.discord3{
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 32px;
+                    min-width: 60px;
+                    min-height: 32px;
+                    border: none;
+                    color: #fff;
+                    background-color: #4f545c;
+                    transition: background-color .17s ease,color .17s ease;
+}
+.amazon1{
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                background: #FFD814;
+                border: 1px solid #FCD200;
+                font-size: 13px;
+                height: 31px;
+                padding: 0 11px;
+                text-align: center;
+                width: 100px;
+                min-width: 200px;
+                font-weight: 500;
+                color: #0F1111;}
+.amazon1:hover{
+                    background: #F7CA00;
+                    border-color: #F2C200;
+                    box-shadow: 0 4px 7px 0 rgb(213 217 217 / 50%);
+                }
+.amazon2{
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                background: #FFF;
+                border: 1px solid #D5D9D9;
+                font-size: 13px;
+                height: 31px;
+                padding: 0 11px;
+                text-align: center;
+                font-weight: 400;
+                color:#0f1111;
+}
+.amazon2:hover{
+                    background-color: #F7FAFA;
+                    border-color: #D5D9D9;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
