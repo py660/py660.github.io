@@ -1,5 +1,5 @@
-
 var myGamePiece;
+var recordScore = 51;
 var myObstacle;
 var score = -2;
 var highscore = 0;
@@ -26,33 +26,39 @@ function onLoad() {
         document.body.style.background = "pink";
         document.getElementById("score").style.color = "pink";
         document.getElementById("gravitytext").style.color = "pink";
-        console.log("> Happy Valentines Day! <")
+        console.log("> Happy Valentines Day! <");
+        
     }
 
 
 //START
-/*
-let x = document.cookie;
-console.log(x);
-document.cookie = "hi=bye";
-document.cookie = "bye=hi111";
-function setcookie(name, value, days)
-{
-  if (days)
-  {
-    var date = new Date();
-    date.setTime(date.getTime()+days*24*60*60*1000); // ) removed
-    var expires = "; expires=" + date.toGMTString(); // + added
+//document.write(x);
+
+document.cookie = "";
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
   }
-  else
-    var expires = "";
-  document.cookie = name+"=" + value+expires + ";path=/"; // + and " added
+  return "";
 }
-setcookie("hi", "bye", 12345);
-let y = document.cookie;
-console.log(y);
-*/
+//document.write(getCookie("best"));
 //END
+let cookievalue = getCookie("best");
+if (cookievalue == ""){
+    document.cookie = "best=0";
+    cookievalue = "0";
+}
+highscore = parseInt(cookievalue);
+//document.write(highscore);
     
 }
 function startGame() {
@@ -170,10 +176,16 @@ function restartGame() {
     startGame()*/
 }
 
+function resetScore() {
+    document.cookie = "best=0";
+    highscore = 0;
+}
+
 var myObstacles = [];
 
 
 function updateGameArea() {
+    document.getElementById("highscore").innerHTML = "Best: " + highscore.toString();
     if (!myGameArea.canvas.matches(":hover")){
         document.getElementById("hovertext").style.color = "red";
         document.getElementById("hovertext").innerHTML = "Move your cursor to the game window to continue.";
@@ -184,7 +196,7 @@ function updateGameArea() {
     }
     if (score > highscore){
         highscore = score;
-        document.getElementById("highscore").innerHTML = "Best: " + highscore.toString();
+        document.cookie = "best=" + highscore.toString();
     }
 
     document.getElementById("hovertext").style.color = "white";
@@ -248,6 +260,11 @@ function updateGameArea() {
     }
     else{
     document.getElementById("score").innerHTML = "Score: " + (Math.floor(score)).toString();
+
+    if (score > recordScore){
+        document.getElementById("recordtext").innerHTML = "You beat the high score of 51!";
+        document.getElementById("recordtext").style.color = "red";
+        }
     }
 }
 
