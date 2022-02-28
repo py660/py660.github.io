@@ -12,10 +12,17 @@ document.onkeydown = function(evt) {
     if (evt.key == "Escape") {
         alert("ESC pressed!");
     }
+    if (evt.key == "Tab") {
+        var urlForTabPressed = document.getElementsByName("URLname").value;
+        if (!urlForTabPressed){
+            urlForTabPressed = "https://classroom.google.com"
+        }
+        var newWindow4Tab = window.open(urlForTabPressed, "HIHIHI");
+    }
     if (evt.key == "Alt"){
-        var url = document.getElementById("url").value;
+        var url = document.getElementsByName("URLname").value;
         if (!url){
-            url = "about:blank"
+            url = "https://classroom.google.com"
         }
         var newWindow = window.open(url, "HIHIHI");
     }
