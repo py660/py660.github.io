@@ -10,21 +10,31 @@ const d = new Date();
 document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.key == "Escape") {
-        alert("ESC pressed!");
+        //alert("ESC pressed!");
     }
-    if (evt.key == "Tab") {
+    /*if (evt.key == "Shift") {
         var urlForTabPressed = document.getElementsByName("URLname").value;
         if (!urlForTabPressed){
             urlForTabPressed = "https://classroom.google.com"
         }
         var newWindow4Tab = window.open(urlForTabPressed, "HIHIHI");
     }
-    if (evt.key == "Alt"){
-        var url = document.getElementsByName("URLname").value;
+    if (evt.key == "Ctrl") {
+        if document.getElementById("")
+        var urlForTabPressed = document.getElementsByName("URLname").value;
+        if (!urlForTabPressed){
+            urlForTabPressed = "https://classroom.google.com"
+        }
+        var newWindow4Tab = window.open(urlForTabPressed, "HIHIHI");
+    }*/
+
+
+    if (evt.key == document.getElementById("key").value){
+        var url = document.getElementById("url").value;
         if (!url){
             url = "https://classroom.google.com"
         }
-        var newWindow = window.open(url, "HIHIHI");
+        var newWindow = window.open(url, "Google Chrome v69.1");
     }
 };
 function onLoad() {
