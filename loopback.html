@@ -1,0 +1,18 @@
+<iframe id="preview" style="padding:0; margin:0;" width="100%" height="100%" srcdoc="<p>Content is still loading...</p>">Your browser does not support iframes. please try again or use a different configuration or browser.</iframe>
+<script>
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    var html = getParameterByName("html")
+    if (html) {
+        document.getElementById("preview").srcdoc = html;
+    }
+    else {
+        document.getElementById("preview").srcdoc = "No content to display.";
+    }
+</script>
