@@ -8,4 +8,6 @@ self.addEventListener('fetch', function(event) {
         mode: "cors"
     });
     return fetch(newRequest);
-}
+});
+
+console.log("loaded");
